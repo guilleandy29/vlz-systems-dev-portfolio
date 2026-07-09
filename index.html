@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLZ Systems Dev — Guillermo Valenzuela | Desarrollador Full-Stack</title>
+<meta name="description" content="Portfolio de Guillermo Valenzuela (VLZ Systems Dev), desarrollador full-stack. Proyecto destacado: Digital Games Shop.">
+<link rel="icon" type="image/png" href="assets/logo-mark-cropped.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#FFFFFF',
+          paperalt: '#E5E7EB',
+          ink: '#0D1117',
+          inksoft: '#4B5563',
+          line: '#D7DAE0',
+          accent: '#2563FF',
+          accentsoft: '#E8EEFF',
+        },
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          sans: ['Montserrat', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth;}
+  ::selection{background:#2563FF; color:#fff;}
+  .nav-links{transition:max-height .3s ease;}
+  section[id], footer[id]{scroll-margin-top:96px;}
+</style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+<header class="border-b border-line bg-paper/85 backdrop-blur sticky top-0 z-50">
+  <div class="max-w-[1080px] mx-auto px-8 py-4 flex flex-col items-center gap-2">
+    <a href="#top" class="flex items-center">
+      <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" class="h-8 sm:h-9 w-auto">
+    </a>
+    <nav class="w-full">
+      <ul class="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-9 text-xs sm:text-sm text-inksoft whitespace-nowrap" id="navLinks">
+        <li><a href="#top" class="hover:text-ink transition-colors">Inicio</a></li>
+        <li><a href="#about" class="hover:text-ink transition-colors">Sobre mí</a></li>
+        <li><a href="#projects" class="hover:text-ink transition-colors">Proyectos</a></li>
+        <li><a href="#skills" class="hover:text-ink transition-colors">Stack</a></li>
+        <li><a href="#contact" class="hover:text-ink transition-colors">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="top" class="pt-12 pb-20 px-8">
+  <div class="max-w-[720px] mx-auto text-left">
+    <h1 class="font-heading font-normal text-[clamp(32px,5vw,50px)] leading-[1.15]">
+      Construyo productos<br>de <em class="italic text-accent">software</em> que<br>funcionan de verdad.
+    </h1>
+    <p class="mt-6 text-lg text-inksoft max-w-[46ch]">
+      Sitios y aplicaciones web completos, optimizados y a tiempo, con soporte directo.
+    </p>
+    <div class="w-14 h-px bg-accent mt-8"></div>
+    <p class="mt-6 text-inksoft max-w-[60ch]">
+      Hola, soy Guillermo Valenzuela. Diseño y desarrollo aplicaciones web completas para todo tipo
+      de negocio — desde la experiencia que ve el cliente hasta el panel de administración que corre
+      por detrás. Mi objetivo es que tengas un producto funcional, claro y listo para usarse.
+    </p>
+    <div class="mt-9">
+      <a href="#contact" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Hablemos</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="border-t border-line py-24 px-8">
+  <div class="max-w-[1080px] mx-auto text-center">
+    <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent">Sobre mí</span>
+    <h2 class="font-heading text-[clamp(26px,3.5vw,36px)] mt-3">Un poco de contexto</h2>
+    <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
+  </div>
+
+  <div class="max-w-[860px] mx-auto mt-14 grid md:grid-cols-[180px_1fr] gap-10 items-start text-left">
+    <div class="w-[160px] h-[160px] rounded-full overflow-hidden border border-line mx-auto md:mx-0">
+      <img src="https://placehold.co/320x320?text=Tu+foto" alt="Foto de Guillermo Valenzuela" class="w-full h-full object-cover">
+    </div>
+    <div class="text-inksoft space-y-4">
+      <p>
+        Soy Guillermo Valenzuela, y trabajo bajo la marca <strong class="text-ink font-semibold">VLZ Systems Dev</strong>
+        como desarrollador full-stack enfocado en construir productos completos: desde la experiencia
+        del usuario final hasta la lógica de negocio que lo sostiene por dentro.
+      </p>
+      <p>
+        Trabajo principalmente con <strong class="text-ink font-semibold">Next.js, React y TypeScript</strong> en el
+        frontend, y <strong class="text-ink font-semibold">Supabase / PostgreSQL</strong> en el backend. Me interesa
+        especialmente construir paneles de administración prolijos y flujos de pago confiables.
+      </p>
+      <p>
+        Además, integro <strong class="text-ink font-semibold">Inteligencia Artificial</strong> en todo mi flujo de
+        desarrollo — desde la escritura de código hasta la resolución de problemas — para trabajar más rápido
+        sin resignar calidad ni prolijidad en el resultado final.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="border-t border-line py-24 px-8">
+  <div class="max-w-[1080px] mx-auto text-center">
+    <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent">Sitio destacado</span>
+    <h2 class="font-heading italic text-[clamp(26px,3.5vw,36px)] mt-3">Digital Games Shop</h2>
+    <p class="text-inksoft mt-2">E-commerce full-stack desarrollado con Next.js + Supabase</p>
+    <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
+  </div>
+
+  <div class="max-w-[1080px] mx-auto mt-14 grid md:grid-cols-2 gap-12 items-center">
+    <div class="bg-paperalt border border-line rounded-md overflow-hidden shadow-[0_20px_50px_-20px_rgba(22,24,27,0.25)]">
+      <div class="flex items-center gap-1.5 px-3.5 py-2.5 border-b border-line bg-white">
+        <span class="w-2 h-2 rounded-full bg-line"></span>
+        <span class="w-2 h-2 rounded-full bg-line"></span>
+        <span class="w-2 h-2 rounded-full bg-line"></span>
+        <span class="ml-3 font-heading font-medium text-[11px] text-inksoft bg-paperalt px-2.5 py-1 rounded">digitalgamesshop.com.ar</span>
+      </div>
+      <img src="assets/project-digitalgamesshop.png" alt="Home de Digital Games Shop mostrando el catálogo y ofertas destacadas" class="w-full block">
+    </div>
+
+    <div class="text-left">
+      <p class="text-inksoft">
+        Tienda online de juegos digitales y gift cards para PlayStation. Los clientes navegan el
+        catálogo por consola, aprovechan ofertas con countdown de hotsale, pagan con Mercado Pago
+        o transferencia, y dejan testimonios. Por detrás, un panel de administración maneja
+        inventario, combos, banners, newsletter, CRM/finanzas y una calculadora con IA para tasar
+        juegos de USD a ARS.
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mt-6 text-sm">
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Catálogo multi-plataforma (PS3 / PS4 / PS5) con ofertas y hotsale</li>
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Checkout con Mercado Pago y transferencia bancaria</li>
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Panel admin con CRM, inventario y combos</li>
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Calculadora con IA para tasación de precios</li>
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Sistema de newsletter y notificaciones por mail</li>
+        <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Autenticación y perfiles de usuario con Supabase</li>
+      </ul>
+      <div class="flex flex-wrap gap-2 mt-7">
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Next.js 16</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">React 19</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">TypeScript</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Tailwind CSS 4</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Supabase</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Mercado Pago SDK</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Zustand</span>
+      </div>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="https://digitalgamesshop.com.ar/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Visitá a Digital Games Shop →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="border-t border-line py-24 px-8">
+  <div class="max-w-[1080px] mx-auto text-center">
+    <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent">Stack</span>
+    <h2 class="font-heading text-[clamp(26px,3.5vw,36px)] mt-3">Con qué trabajo</h2>
+    <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
+  </div>
+
+  <div class="max-w-[1080px] mx-auto mt-14 grid grid-cols-2 md:grid-cols-5 gap-px bg-line border border-line rounded-md overflow-hidden">
+    <div class="bg-white p-7 text-center">
+      <div class="w-8 h-px bg-accent mx-auto"></div>
+      <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent block mt-4">Frontend</span>
+      <ul class="mt-3 text-sm text-inksoft space-y-1.5">
+        <li>Next.js / React</li>
+        <li>TypeScript</li>
+        <li>Tailwind CSS</li>
+        <li>Zustand</li>
+      </ul>
+    </div>
+    <div class="bg-white p-7 text-center">
+      <div class="w-8 h-px bg-accent mx-auto"></div>
+      <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent block mt-4">Backend</span>
+      <ul class="mt-3 text-sm text-inksoft space-y-1.5">
+        <li>Supabase</li>
+        <li>PostgreSQL</li>
+        <li>Node.js</li>
+        <li>Nodemailer</li>
+      </ul>
+    </div>
+    <div class="bg-white p-7 text-center">
+      <div class="w-8 h-px bg-accent mx-auto"></div>
+      <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent block mt-4">Pagos & Datos</span>
+      <ul class="mt-3 text-sm text-inksoft space-y-1.5">
+        <li>Mercado Pago SDK</li>
+        <li>Sharp (imágenes)</li>
+        <li>Auth & sesiones</li>
+        <li>APIs REST</li>
+      </ul>
+    </div>
+    <div class="bg-white p-7 text-center">
+      <div class="w-8 h-px bg-accent mx-auto"></div>
+      <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent block mt-4">Herramientas</span>
+      <ul class="mt-3 text-sm text-inksoft space-y-1.5">
+        <li>Git / GitHub</li>
+        <li>Vercel</li>
+        <li>Figma</li>
+        <li>Lucide React</li>
+      </ul>
+    </div>
+    <div class="bg-white p-7 text-center">
+      <div class="w-8 h-px bg-accent mx-auto"></div>
+      <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent block mt-4">IA</span>
+      <ul class="mt-3 text-sm text-inksoft space-y-1.5">
+        <li>Claude Code</li>
+        <li>ChatGPT</li>
+        <li>Cursor</li>
+        <li>Prompt engineering</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="border-t border-line py-24 px-8">
+  <div class="max-w-[1080px] mx-auto text-center">
+    <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent">Contacto</span>
+    <h2 class="font-heading text-[clamp(26px,3.5vw,36px)] mt-3">Dejame tus datos</h2>
+    <p class="text-inksoft mt-3">Completá el formulario y te escribo por WhatsApp o email a la brevedad.</p>
+    <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
+  </div>
+
+  <form id="contactForm" class="max-w-[560px] mx-auto mt-14 space-y-5 text-left">
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div>
+        <label for="cf-nombre" class="block text-sm font-medium text-ink mb-1.5">Nombre y apellido</label>
+        <input id="cf-nombre" name="nombre" type="text" required placeholder="Juan Pérez" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+      </div>
+      <div>
+        <label for="cf-telefono" class="block text-sm font-medium text-ink mb-1.5">Teléfono</label>
+        <input id="cf-telefono" name="telefono" type="tel" required placeholder="+54 9 11 1234-5678" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+      </div>
+    </div>
+    <div>
+      <label for="cf-email" class="block text-sm font-medium text-ink mb-1.5">Email</label>
+      <input id="cf-email" name="email" type="email" required placeholder="juan@gmail.com" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+    </div>
+    <div>
+      <label for="cf-mensaje" class="block text-sm font-medium text-ink mb-1.5">Contame sobre tu proyecto <span class="text-inksoft font-normal">(opcional)</span></label>
+      <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Quiero una tienda online para..." class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent resize-none"></textarea>
+    </div>
+    <button type="submit" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Enviar por WhatsApp →</button>
+  </form>
+</section>
+
+<section class="bg-ink py-16 px-8">
+  <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+    <div>
+      <h2 class="font-heading text-white text-2xl md:text-3xl">¿Tenés un proyecto en mente? <strong class="font-semibold">Hablemos.</strong></h2>
+      <p class="text-white/60 mt-2">Escribime y te respondo en menos de 24 horas.</p>
+    </div>
+    <a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-ink px-6 py-3 rounded-md text-sm font-medium hover:bg-accent hover:text-white transition-colors whitespace-nowrap">Hablemos →</a>
+  </div>
+</section>
+
+<footer class="bg-ink text-white/70 py-12 px-8">
+  <div class="max-w-[1080px] mx-auto grid md:grid-cols-2 gap-12">
+    <div>
+      <span class="font-heading font-medium text-sm uppercase tracking-widest text-accent">Contacto</span>
+      <div class="mt-6 space-y-5 text-lg">
+        <p class="flex items-center gap-4">
+          <svg class="w-6 h-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Argentina
+        </p>
+        <p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guilleandy29@gmail.com&su=Contacto%20desde%20el%20portfolio&body=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-white transition-colors">
+            <svg class="w-6 h-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            guilleandy29@gmail.com
+          </a>
+        </p>
+        <p>
+          <a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-white transition-colors">
+            <svg class="w-6 h-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.96 9.96 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10Zm0 18.15c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.5 3.66-8.15 8.16-8.15 4.5 0 8.15 3.66 8.15 8.15 0 4.5-3.65 8.19-8.02 8.19Zm4.48-6.13c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.11-.22-.17-.46-.29Z"/></svg>
+            +54 9 3795 58-5211
+          </a>
+        </p>
+        <p>
+          <a href="https://instagram.com/vlzsystemsdev" target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-white transition-colors">
+            <svg class="w-6 h-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            Instagram
+          </a>
+        </p>
+      </div>
+    </div>
+    <div>
+      <span class="font-heading font-medium text-sm uppercase tracking-widest text-accent">Sobre VLZ</span>
+      <p class="mt-6 text-lg max-w-[52ch] leading-relaxed">
+        Soy Guillermo Valenzuela, desarrollador full-stack bajo la marca VLZ Systems Dev. Construyo
+        productos web completos para todo tipo de negocio: desde el frontend que ve el usuario hasta
+        el backend y el panel de administración que lo sostiene. Priorizo una experiencia simple y
+        un producto confiable de punta a punta.
+      </p>
+    </div>
+  </div>
+  <div class="max-w-[1080px] mx-auto border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+    <span>Copyright © <span id="year"></span> VLZ Systems Dev</span>
+    <nav class="flex gap-6">
+      <a href="#top" class="hover:text-white transition-colors">Inicio</a>
+      <a href="#about" class="hover:text-white transition-colors">Sobre mí</a>
+      <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform" style="background:#25D366;">
+  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.96 9.96 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10Zm0 18.15c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.5 3.66-8.15 8.16-8.15 4.5 0 8.15 3.66 8.15 8.15 0 4.5-3.65 8.19-8.02 8.19Zm4.48-6.13c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.11-.22-.17-.46-.29Z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('cf-nombre').value.trim();
+    const telefono = document.getElementById('cf-telefono').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const mensaje = document.getElementById('cf-mensaje').value.trim();
+
+    let texto = `Hola Guillermo, te dejo mis datos para que me contactes:\n`;
+    texto += `Nombre: ${nombre}\n`;
+    texto += `Email: ${email}\n`;
+    texto += `Teléfono: ${telefono}`;
+    if (mensaje) texto += `\nMensaje: ${mensaje}`;
+
+    const url = `https://wa.me/5493795585211?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+</body>
+</html>
