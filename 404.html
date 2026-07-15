@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página no encontrada — VLZ Systems Dev</title>
+<meta name="description" content="La página que buscás no existe o fue movida.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#FFFFFF',
+          paperalt: '#E5E7EB',
+          ink: '#0D1117',
+          inksoft: '#4B5563',
+          line: '#D7DAE0',
+          accent: '#2563FF',
+          accentsoft: '#E8EEFF',
+        },
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          sans: ['Montserrat', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+</head>
+<body class="bg-paper text-ink font-sans antialiased min-h-screen flex flex-col">
+
+<header class="border-b border-line py-4 px-8">
+  <div class="max-w-[1080px] mx-auto flex justify-center">
+    <a href="/" class="flex items-center">
+      <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="1522" height="272" class="h-8 sm:h-9 w-auto">
+    </a>
+  </div>
+</header>
+
+<main class="flex-1 flex items-center justify-center px-8 py-24 text-center">
+  <div class="max-w-[520px]">
+    <span class="font-heading font-medium text-xs uppercase tracking-widest text-accent">Error 404</span>
+    <h1 class="font-heading text-[clamp(28px,4vw,40px)] mt-3">Esta página no existe</h1>
+    <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
+    <p class="text-inksoft mt-6">
+      El enlace que seguiste puede estar roto o la página fue movida. Volvé al inicio para seguir navegando.
+    </p>
+    <div class="mt-9">
+      <a href="/" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Volver al inicio</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-ink text-white/50 py-6 px-8 text-center text-xs">
+  Copyright © <span id="year"></span> VLZ Systems Dev
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

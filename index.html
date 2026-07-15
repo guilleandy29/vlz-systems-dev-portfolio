@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VLZ Systems Dev — Guillermo Valenzuela | Desarrollador Full-Stack</title>
 <meta name="description" content="Portfolio de Guillermo Valenzuela (VLZ Systems Dev), desarrollador full-stack. Proyecto destacado: Digital Games Shop.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vlz-systems-dev.vercel.app/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vlz-systems-dev.vercel.app">
@@ -51,28 +53,61 @@
   .nav-links{transition:max-height .3s ease;}
   section[id], footer[id]{scroll-margin-top:96px;}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "VLZ Systems Dev",
+  "founder": {
+    "@type": "Person",
+    "name": "Guillermo Valenzuela"
+  },
+  "url": "https://vlz-systems-dev.vercel.app",
+  "image": "https://vlz-systems-dev.vercel.app/assets/og-image.png",
+  "description": "Desarrollador full-stack. Sitios y aplicaciones web completos, optimizados y a tiempo, con soporte directo.",
+  "areaServed": "AR",
+  "email": "guilleandy29@gmail.com",
+  "telephone": "+5493795585211",
+  "sameAs": [
+    "https://instagram.com/vlzsystemsdev"
+  ]
+}
+</script>
 </head>
 <body class="bg-paper text-ink font-sans antialiased">
 
 <header class="border-b border-line bg-paper/85 backdrop-blur sticky top-0 z-50">
-  <div class="max-w-[1080px] mx-auto px-8 py-4 flex flex-col items-center gap-2">
-    <a href="#top" class="flex items-center">
-      <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" class="h-8 sm:h-9 w-auto">
-    </a>
-    <nav class="w-full">
-      <ul class="flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-9 text-xs sm:text-sm text-inksoft whitespace-nowrap" id="navLinks">
-        <li><a href="#top" class="hover:text-ink transition-colors">Inicio</a></li>
-        <li><a href="#about" class="hover:text-ink transition-colors">Sobre mí</a></li>
-        <li><a href="#projects" class="hover:text-ink transition-colors">Proyectos</a></li>
-        <li><a href="#skills" class="hover:text-ink transition-colors">Stack</a></li>
-        <li><a href="#contact" class="hover:text-ink transition-colors">Contacto</a></li>
-      </ul>
-    </nav>
+  <div class="max-w-[1080px] mx-auto px-8 py-4">
+    <div class="flex items-center justify-between sm:flex-col sm:items-center sm:gap-2">
+      <a href="#top" class="flex items-center">
+        <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="1522" height="272" class="h-8 sm:h-9 w-auto">
+      </a>
+      <button id="menuToggle" type="button" class="sm:hidden p-2 -mr-2 text-ink" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <svg id="menuIconOpen" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="menuIconClose" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <nav class="w-full">
+        <ul class="hidden sm:flex flex-wrap justify-center gap-x-3 gap-y-1 sm:gap-x-9 text-xs sm:text-sm text-inksoft whitespace-nowrap" id="navLinks">
+          <li><a href="#top" class="hover:text-ink transition-colors">Inicio</a></li>
+          <li><a href="#about" class="hover:text-ink transition-colors">Sobre mí</a></li>
+          <li><a href="#projects" class="hover:text-ink transition-colors">Proyectos</a></li>
+          <li><a href="#skills" class="hover:text-ink transition-colors">Stack</a></li>
+          <li><a href="#contact" class="hover:text-ink transition-colors">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
 <section id="top" class="pt-12 pb-20 px-8">
   <div class="max-w-[720px] mx-auto text-left">
+    <div class="inline-flex items-center gap-2 text-xs font-medium text-inksoft mb-6">
+      <span class="relative flex h-2.5 w-2.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+      </span>
+      Disponible para nuevos proyectos
+    </div>
     <h1 class="font-heading font-normal text-[clamp(32px,5vw,50px)] leading-[1.15]">
       Le doy a tu negocio<br>el salto que necesita<br>para <em class="italic text-accent">vender más</em>.
     </h1>
@@ -100,7 +135,7 @@
 
   <div class="max-w-[860px] mx-auto mt-14 grid md:grid-cols-[180px_1fr] gap-10 items-start text-left">
     <div class="w-[160px] h-[160px] rounded-full overflow-hidden border border-line mx-auto md:mx-0">
-      <img src="https://placehold.co/320x320?text=Tu+foto" alt="Foto de Guillermo Valenzuela" class="w-full h-full object-cover">
+      <img src="https://placehold.co/320x320?text=Tu+foto" alt="Foto de Guillermo Valenzuela" width="320" height="320" loading="lazy" decoding="async" class="w-full h-full object-cover">
     </div>
     <div class="text-inksoft space-y-4">
       <p>
@@ -134,7 +169,7 @@
         <span class="ml-3 font-heading font-medium text-[11px] text-inksoft bg-paperalt px-2.5 py-1 rounded">digitalgamesshop.com.ar</span>
       </div>
       <a href="https://digitalgamesshop.com.ar/" target="_blank" rel="noopener" class="block group overflow-hidden">
-        <img src="assets/project-digitalgamesshop.png" alt="Home de Digital Games Shop mostrando el catálogo y ofertas destacadas" class="w-full block transition-transform duration-300 group-hover:scale-[1.03]">
+        <img src="assets/project-digitalgamesshop.png" alt="Home de Digital Games Shop mostrando el catálogo y ofertas destacadas" width="1440" height="900" loading="lazy" decoding="async" class="w-full block transition-transform duration-300 group-hover:scale-[1.03]">
       </a>
     </div>
 
@@ -229,26 +264,35 @@
     <div class="w-14 h-px bg-accent mx-auto mt-6"></div>
   </div>
 
-  <form id="contactForm" class="max-w-[560px] mx-auto mt-14 space-y-5 text-left">
+  <form id="contactForm" novalidate class="max-w-[560px] mx-auto mt-14 space-y-5 text-left">
     <div class="grid sm:grid-cols-2 gap-5">
       <div>
         <label for="cf-nombre" class="block text-sm font-medium text-ink mb-1.5">Nombre y apellido</label>
-        <input id="cf-nombre" name="nombre" type="text" required placeholder="Juan Pérez" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <input id="cf-nombre" name="nombre" type="text" required placeholder="Juan Pérez" aria-describedby="cf-nombre-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <p id="cf-nombre-error" class="hidden mt-1.5 text-xs text-red-600"></p>
       </div>
       <div>
         <label for="cf-telefono" class="block text-sm font-medium text-ink mb-1.5">Teléfono</label>
-        <input id="cf-telefono" name="telefono" type="tel" required placeholder="+54 9 11 1234-5678" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <input id="cf-telefono" name="telefono" type="tel" required placeholder="+54 9 11 1234-5678" aria-describedby="cf-telefono-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <p id="cf-telefono-error" class="hidden mt-1.5 text-xs text-red-600"></p>
       </div>
     </div>
     <div>
       <label for="cf-email" class="block text-sm font-medium text-ink mb-1.5">Email</label>
-      <input id="cf-email" name="email" type="email" required placeholder="juan@gmail.com" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+      <input id="cf-email" name="email" type="email" required placeholder="juan@gmail.com" aria-describedby="cf-email-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+      <p id="cf-email-error" class="hidden mt-1.5 text-xs text-red-600"></p>
     </div>
     <div>
       <label for="cf-mensaje" class="block text-sm font-medium text-ink mb-1.5">Contame sobre tu proyecto <span class="text-inksoft font-normal">(opcional)</span></label>
       <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Quiero una tienda online para..." class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent resize-none"></textarea>
     </div>
-    <button type="submit" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Enviar por WhatsApp →</button>
+    <div>
+      <button id="cf-submit" type="submit" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-ink">
+        <svg id="cf-spinner" class="hidden w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle class="opacity-25" cx="12" cy="12" r="10"/><path class="opacity-75" d="M12 2a10 10 0 0 1 10 10"/></svg>
+        <span id="cf-submit-text">Enviar por WhatsApp →</span>
+      </button>
+      <p id="cf-status" role="status" aria-live="polite" class="hidden mt-4 text-sm rounded-md px-4 py-3"></p>
+    </div>
   </form>
 </section>
 
@@ -311,29 +355,155 @@
   </div>
 </footer>
 
-<a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform" style="background:#25D366;">
+<a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" aria-label="Escribime por WhatsApp" id="floatingWhatsapp" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300" style="background:#25D366;">
   <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.96 9.96 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10Zm0 18.15c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.5 3.66-8.15 8.16-8.15 4.5 0 8.15 3.66 8.15 8.15 0 4.5-3.65 8.19-8.02 8.19Zm4.48-6.13c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.68-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.11-.22-.17-.46-.29Z"/></svg>
 </a>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // Menú hamburguesa (mobile)
+  const menuToggle = document.getElementById('menuToggle');
+  const menuIconOpen = document.getElementById('menuIconOpen');
+  const menuIconClose = document.getElementById('menuIconClose');
+  const navLinks = document.getElementById('navLinks');
+
+  function setMenuOpen(open) {
+    navLinks.classList.toggle('hidden', !open);
+    navLinks.classList.toggle('flex', open);
+    navLinks.classList.toggle('flex-col', open);
+    navLinks.classList.toggle('items-center', open);
+    navLinks.classList.toggle('mt-3', open);
+    menuIconOpen.classList.toggle('hidden', open);
+    menuIconClose.classList.toggle('hidden', !open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+  }
+
+  menuToggle.addEventListener('click', () => {
+    setMenuOpen(navLinks.classList.contains('hidden'));
+  });
+
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A' && !menuToggle.classList.contains('hidden') && window.getComputedStyle(menuToggle).display !== 'none') {
+      setMenuOpen(false);
+    }
+  });
+
+  // Ocultar el botón flotante de WhatsApp mientras el formulario de contacto está a la vista
+  const floatingWhatsapp = document.getElementById('floatingWhatsapp');
+  const contactSection = document.getElementById('contact');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        floatingWhatsapp.classList.toggle('opacity-0', entry.isIntersecting);
+        floatingWhatsapp.classList.toggle('pointer-events-none', entry.isIntersecting);
+      });
+    }, { threshold: 0.2 });
+    observer.observe(contactSection);
+  }
+
+  // Formulario de contacto
   const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('cf-submit');
+  const submitBtnText = document.getElementById('cf-submit-text');
+  const spinner = document.getElementById('cf-spinner');
+  const statusBox = document.getElementById('cf-status');
+
+  const fields = {
+    nombre: {
+      input: document.getElementById('cf-nombre'),
+      error: document.getElementById('cf-nombre-error'),
+      validate: (v) => v.trim().length > 0,
+      message: 'Ingresá tu nombre y apellido.',
+    },
+    telefono: {
+      input: document.getElementById('cf-telefono'),
+      error: document.getElementById('cf-telefono-error'),
+      validate: (v) => v.replace(/[^0-9]/g, '').length >= 8,
+      message: 'Ingresá un teléfono válido (mínimo 8 dígitos).',
+    },
+    email: {
+      input: document.getElementById('cf-email'),
+      error: document.getElementById('cf-email-error'),
+      validate: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
+      message: 'Ingresá un email válido.',
+    },
+  };
+
+  function setFieldError(field, message) {
+    field.input.classList.toggle('border-red-500', !!message);
+    field.input.classList.toggle('focus:ring-red-500', !!message);
+    field.input.classList.toggle('focus:border-red-500', !!message);
+    field.error.textContent = message || '';
+    field.error.classList.toggle('hidden', !message);
+  }
+
+  function validateForm() {
+    let valid = true;
+    Object.values(fields).forEach((field) => {
+      const ok = field.validate(field.input.value);
+      setFieldError(field, ok ? '' : field.message);
+      if (!ok) valid = false;
+    });
+    return valid;
+  }
+
+  Object.values(fields).forEach((field) => {
+    field.input.addEventListener('input', () => {
+      if (!field.error.classList.contains('hidden')) {
+        setFieldError(field, field.validate(field.input.value) ? '' : field.message);
+      }
+    });
+  });
+
+  function showStatus(type, message) {
+    statusBox.textContent = message;
+    statusBox.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-700', 'bg-red-50', 'text-red-700');
+    statusBox.classList.add(type === 'success' ? 'bg-emerald-50' : 'bg-red-50', type === 'success' ? 'text-emerald-700' : 'text-red-700');
+  }
+
+  function setLoading(loading) {
+    submitBtn.disabled = loading;
+    spinner.classList.toggle('hidden', !loading);
+    submitBtnText.textContent = loading ? 'Enviando…' : 'Enviar por WhatsApp →';
+  }
+
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const nombre = document.getElementById('cf-nombre').value.trim();
-    const telefono = document.getElementById('cf-telefono').value.trim();
-    const email = document.getElementById('cf-email').value.trim();
-    const mensaje = document.getElementById('cf-mensaje').value.trim();
+    statusBox.classList.add('hidden');
 
-    let texto = `Hola Guillermo, te dejo mis datos para que me contactes:\n`;
-    texto += `Nombre: ${nombre}\n`;
-    texto += `Email: ${email}\n`;
-    texto += `Teléfono: ${telefono}`;
-    if (mensaje) texto += `\nMensaje: ${mensaje}`;
+    if (!validateForm()) {
+      showStatus('error', 'Revisá los campos marcados antes de continuar.');
+      fields.nombre.input.closest('form').querySelector('.border-red-500')?.focus();
+      return;
+    }
 
-    const url = `https://wa.me/5493795585211?text=${encodeURIComponent(texto)}`;
-    window.open(url, '_blank', 'noopener');
+    setLoading(true);
+
+    setTimeout(() => {
+      const nombre = fields.nombre.input.value.trim();
+      const telefono = fields.telefono.input.value.trim();
+      const email = fields.email.input.value.trim();
+      const mensaje = document.getElementById('cf-mensaje').value.trim();
+
+      let texto = `Hola Guillermo, te dejo mis datos para que me contactes:\n`;
+      texto += `Nombre: ${nombre}\n`;
+      texto += `Email: ${email}\n`;
+      texto += `Teléfono: ${telefono}`;
+      if (mensaje) texto += `\nMensaje: ${mensaje}`;
+
+      const url = `https://wa.me/5493795585211?text=${encodeURIComponent(texto)}`;
+      const win = window.open(url, '_blank', 'noopener');
+
+      setLoading(false);
+
+      if (win) {
+        showStatus('success', '¡Listo! Se abrió WhatsApp con tus datos cargados.');
+        contactForm.reset();
+      } else {
+        showStatus('error', 'No pudimos abrir WhatsApp automáticamente (revisá el bloqueador de ventanas emergentes). Escribinos directo al +54 9 3795 58-5211.');
+      }
+    }, 450);
   });
 </script>
 
