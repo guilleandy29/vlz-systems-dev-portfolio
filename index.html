@@ -99,6 +99,7 @@
   </div>
 </header>
 
+<main>
 <section id="top" class="pt-12 pb-20 px-8">
   <div class="max-w-[720px] mx-auto text-left">
     <div class="inline-flex items-center gap-2 text-xs font-medium text-inksoft mb-6">
@@ -190,13 +191,13 @@
         <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-2 before:h-[2px] before:bg-accent">Autenticación y perfiles de usuario con Supabase</li>
       </ul>
       <div class="flex flex-wrap gap-2 mt-7">
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Next.js 16</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">React 19</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">TypeScript</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Tailwind CSS 4</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Supabase</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Mercado Pago SDK</span>
-        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-accent">Zustand</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">Next.js 16</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">React 19</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">TypeScript</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">Tailwind CSS 4</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">Supabase</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">Mercado Pago SDK</span>
+        <span class="font-heading font-medium text-xs px-3 py-1.5 rounded-full bg-accentsoft text-[#1D4ED8]">Zustand</span>
       </div>
       <div class="flex flex-wrap gap-4 mt-8">
         <a href="https://digitalgamesshop.com.ar/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors">Visitá a Digital Games Shop →</a>
@@ -268,23 +269,23 @@
     <div class="grid sm:grid-cols-2 gap-5">
       <div>
         <label for="cf-nombre" class="block text-sm font-medium text-ink mb-1.5">Nombre y apellido</label>
-        <input id="cf-nombre" name="nombre" type="text" required placeholder="Juan Pérez" aria-describedby="cf-nombre-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <input id="cf-nombre" name="nombre" type="text" required placeholder="Juan Pérez" aria-describedby="cf-nombre-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
         <p id="cf-nombre-error" class="hidden mt-1.5 text-xs text-red-600"></p>
       </div>
       <div>
         <label for="cf-telefono" class="block text-sm font-medium text-ink mb-1.5">Teléfono</label>
-        <input id="cf-telefono" name="telefono" type="tel" required placeholder="+54 9 11 1234-5678" aria-describedby="cf-telefono-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+        <input id="cf-telefono" name="telefono" type="tel" required placeholder="+54 9 11 1234-5678" aria-describedby="cf-telefono-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
         <p id="cf-telefono-error" class="hidden mt-1.5 text-xs text-red-600"></p>
       </div>
     </div>
     <div>
       <label for="cf-email" class="block text-sm font-medium text-ink mb-1.5">Email</label>
-      <input id="cf-email" name="email" type="email" required placeholder="juan@gmail.com" aria-describedby="cf-email-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+      <input id="cf-email" name="email" type="email" required placeholder="juan@gmail.com" aria-describedby="cf-email-error" class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
       <p id="cf-email-error" class="hidden mt-1.5 text-xs text-red-600"></p>
     </div>
     <div>
       <label for="cf-mensaje" class="block text-sm font-medium text-ink mb-1.5">Contame sobre tu proyecto <span class="text-inksoft font-normal">(opcional)</span></label>
-      <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Quiero una tienda online para..." class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/60 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent resize-none"></textarea>
+      <textarea id="cf-mensaje" name="mensaje" rows="4" placeholder="Quiero una tienda online para..." class="w-full border border-line rounded-md px-4 py-2.5 text-sm text-ink placeholder:text-inksoft/80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent resize-none"></textarea>
     </div>
     <div>
       <button id="cf-submit" type="submit" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-accent transition-colors disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-ink">
@@ -305,11 +306,12 @@
     <a href="https://wa.me/5493795585211?text=Hola%20Guillermo%2C%20vi%20tu%20portfolio%20y%20quiero%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-ink px-6 py-3 rounded-md text-sm font-medium hover:bg-accent hover:text-white transition-colors whitespace-nowrap">Hablemos →</a>
   </div>
 </section>
+</main>
 
 <footer class="bg-ink text-white/70 py-12 px-8">
   <div class="max-w-[1080px] mx-auto grid md:grid-cols-2 gap-12">
     <div>
-      <span class="font-heading font-medium text-sm uppercase tracking-widest text-accent">Contacto</span>
+      <span class="font-heading font-medium text-sm uppercase tracking-widest text-[#60A5FA]">Contacto</span>
       <div class="mt-6 space-y-5 text-lg">
         <p class="flex items-center gap-4">
           <svg class="w-6 h-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -336,7 +338,7 @@
       </div>
     </div>
     <div>
-      <span class="font-heading font-medium text-sm uppercase tracking-widest text-accent">Sobre VLZ</span>
+      <span class="font-heading font-medium text-sm uppercase tracking-widest text-[#60A5FA]">Sobre VLZ</span>
       <p class="mt-6 text-lg max-w-[52ch] leading-relaxed">
         Soy Guillermo Valenzuela, desarrollador full-stack bajo la marca VLZ Systems Dev. Construyo
         productos web completos para todo tipo de negocio: desde el frontend que ve el usuario hasta
