@@ -24,7 +24,9 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/tailwind.css">
 <script type="application/ld+json">
 {
@@ -53,7 +55,7 @@
   <div class="max-w-[1080px] mx-auto px-8 py-4">
     <div class="flex items-center justify-between sm:flex-col sm:items-center sm:gap-2">
       <a href="#top" class="flex items-center">
-        <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="1522" height="272" class="h-8 sm:h-9 w-auto">
+        <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="537" height="96" class="h-8 sm:h-9 w-auto">
       </a>
       <button id="menuToggle" type="button" class="sm:hidden p-2 -mr-2 text-ink" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
         <svg id="menuIconOpen" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -143,7 +145,10 @@
         <span class="ml-3 font-heading font-medium text-[11px] text-inksoft bg-paperalt px-2.5 py-1 rounded">digitalgamesshop.com.ar</span>
       </div>
       <a href="https://digitalgamesshop.com.ar/" target="_blank" rel="noopener" class="block group overflow-hidden">
-        <img src="assets/project-digitalgamesshop.png" alt="Home de Digital Games Shop mostrando el catálogo y ofertas destacadas" width="1440" height="900" loading="lazy" decoding="async" class="w-full block transition-transform duration-300 group-hover:scale-[1.03]">
+        <picture>
+          <source srcset="assets/project-digitalgamesshop.webp" type="image/webp">
+          <img src="assets/project-digitalgamesshop.jpg" alt="Home de Digital Games Shop mostrando el catálogo y ofertas destacadas" width="1200" height="750" loading="lazy" decoding="async" class="w-full block transition-transform duration-300 group-hover:scale-[1.03]">
+        </picture>
       </a>
     </div>
 

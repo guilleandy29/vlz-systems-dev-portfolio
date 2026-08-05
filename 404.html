@@ -9,7 +9,9 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="assets/tailwind.css">
 </head>
 <body class="bg-paper text-ink font-sans antialiased min-h-screen flex flex-col">
@@ -17,7 +19,7 @@
 <header class="border-b border-line py-4 px-8">
   <div class="max-w-[1080px] mx-auto flex justify-center">
     <a href="/" class="flex items-center">
-      <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="1522" height="272" class="h-8 sm:h-9 w-auto">
+      <img src="assets/logo-cropped.png" alt="VLZ Systems Dev" width="537" height="96" class="h-8 sm:h-9 w-auto">
     </a>
   </div>
 </header>
