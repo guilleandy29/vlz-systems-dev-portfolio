@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FFFFFF;
+  --color-paperalt: #E5E7EB;
+  --color-ink: #0D1117;
+  --color-inksoft: #4B5563;
+  --color-line: #D7DAE0;
+  --color-accent: #2563FF;
+  --color-accentsoft: #E8EEFF;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #2563FF;
+  color: #fff;
+}
+
+.nav-links {
+  transition: max-height .3s ease;
+}
+
+section[id], footer[id] {
+  scroll-margin-top: 96px;
+}
