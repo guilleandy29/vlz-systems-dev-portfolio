@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify"
+    "build:css": "tailwindcss -i ./src/input.css -o ./.build/tailwind.css --minify",
+    "inline:css": "node scripts/inline-css.js",
+    "build": "npm run build:css && npm run inline:css"
   },
   "repository": {
     "type": "git",
